@@ -4,7 +4,7 @@ import { BUY_MILK } from "../redux/milk/milkTypes";
 
 function MilkContainer() {
   const [value, setValue] = useState("");
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.milk);
   const dispatch = useDispatch();
   return (
     <div>

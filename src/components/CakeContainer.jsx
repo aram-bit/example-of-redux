@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BUY_CAKE } from "../redux/cake/cakeTypes";
 
 function CakeContainer() {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.cake);
   const dispatch = useDispatch();
   return (
     <div>

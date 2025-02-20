@@ -1,4 +1,4 @@
-// import CakeContainer from './components/CakeContainer'
+import CakeContainer from './components/CakeContainer'
 import MilkContainer from './components/MilkContainer'
 import store from './redux/store'
 import { Provider } from 'react-redux'
@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 function App() {
   return (
 <Provider store={store}>
-  {/* <CakeContainer/> */}
+  <CakeContainer/>
   <MilkContainer/>
 </Provider>
   )
